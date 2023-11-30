@@ -1,0 +1,61 @@
+.main {
+    width: 100%;
+}
+
+.main__form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main__heading,
+.result,
+p {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+#imputBirthday {
+    border-radius: 5px;
+    border: 3px solid rgb(225, 102, 14);
+    text-align: center;
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.task__form {
+    margin-top: 20px;
+}
+
+#btnBirthday {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    background-color: rgba(216, 222, 63, 0.696);
+    border-radius: 5px;
+    border: 3px solid rgb(225, 102, 14);
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+#errorResult {
+    color: red;
+}
+
+#btnBirthday:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
