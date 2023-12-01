@@ -1,7 +1,7 @@
 //Задание 1
 // Выведите числа от 1 до 10 в консоль
-for (let step = 1; step <= 10; step++) {
-    console.log(step);
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
 }
 
 //Задание 2
@@ -14,14 +14,14 @@ while (number <= 20) {
 
 //Задание 3
 // Выведите числа от 10 до 1 в консоль в обратном порядке
-for (let stepTwo = 10; stepTwo > 0; stepTwo--) {
-    console.log(stepTwo);
+for (let i = 10; i > 0; i--) {
+    console.log(i);
 }
 
 //Задание 4
 // Выведите таблицу умножения на 5 от 1 до 10
-for (let ii = 1; ii <= 10; ii++) {
-    console.log(ii*5);
+for (let i = 1; i <= 10; i++) {
+    console.log(i*5);
 }
 
 //Задание 5
@@ -109,28 +109,51 @@ const vowels = ['a', 'e', 'i', 'o', 'u'];
 //Задание 16
 // Объедините все строки массива в одну строку с пробелами между ними
 const words = ['Hello', 'world', '!'];
-
+console.log(words.join(' '));
 
 
 //Задание 14
 // Преобразуйте массив каждый элемент массива words в верхний регистр
-
-
-
+for (let i = 0; i < words.length; i += 1) {
+    const word = words[i];
+    const wordsChange = word.toUpperCase();
+    words[i] = wordsChange
+}
+console.log(words); 
 
 //Задание 17
 // Выведите числа от 1 до 10 в консоль используя цикл while
-
+let numberWhile = 1;
+while (numberWhile <= 10) {
+    console.log(numberWhile);
+    numberWhile += 1;
+}
 
 //Задание 18
 // Выведите числа от 1 до 10 в консоль в обратном порядке используя цикл while
-
+let numberWhileMinus = 10;
+while (numberWhileMinus > 0) {
+    console.log(numberWhileMinus);
+    numberWhileMinus -= 1;
+}
 
 //Задание 19
 // Проверьте, все ли элементы массива являются положительными числами используя цикл while
 // Подсказка: используйте директиву break
 const allNumbers = [1, 2, 3, -4, 5];
 let allPositive = true;
+
+/*for (let i = 0; i < arr.allNumbers; i++) {
+    if (allNumbers[i] > 0) {
+        allPositive = true;
+    } else {
+        allPositive = false;
+
+   while (allPositive = true) {
+		console.log(allNumbers);
+        allNumbers++;
+}*/
+
 
 //Задание 20
 // Выведите значения элементов массива до первого отрицательного числа используя цикл do...while
@@ -150,4 +173,3 @@ const random = [2, 4, 6, -3, 8, 10];
 // Подсказка: используйте методы объекта Math и длину массива alphabet
 let alphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя';
 let randomString = '';
-
