@@ -104,7 +104,12 @@ for (let word of list) {
 const greeting = 'Hello, world!';
 let vowelCount = 0;
 const vowels = ['a', 'e', 'i', 'o', 'u'];
-
+for (let letter of greeting.toLowerCase()) {
+    if (vowels.includes(letter)) {
+        vowelCount++
+    }
+}
+console.log(vowelCount);
 
 //Задание 16
 // Объедините все строки массива в одну строку с пробелами между ними
@@ -142,34 +147,59 @@ while (numberWhileMinus > 0) {
 // Подсказка: используйте директиву break
 const allNumbers = [1, 2, 3, -4, 5];
 let allPositive = true;
-
-/*for (let i = 0; i < arr.allNumbers; i++) {
-    if (allNumbers[i] > 0) {
-        allPositive = true;
-    } else {
-        allPositive = false;
-
-   while (allPositive = true) {
-		console.log(allNumbers);
-        allNumbers++;
-}*/
-
+let m = 0;
+while (m < allNumbers.length) {
+    if (allNumbers[m] < 0) {
+    console.log("Не все элементы положительные");
+    break;
+    }
+    m++;
+}
 
 //Задание 20
 // Выведите значения элементов массива до первого отрицательного числа используя цикл do...while
 const random = [2, 4, 6, -3, 8, 10];
+let i = 0;
+do {
+    console.log(random[i]);
+    i++;
+} while (random[i] > 0);
+
 
 //Задание 21
 // Выведите числа от 1 до 100, пропуская числа, которые делятся на 3 используя цикл do...while
+let numberWhy = 0;
+do {
+    if (numberWhy % 3 !== 0) {
+        console.log(numberWhy);
+    }
+    numberWhy++;
+} while (numberWhy <= 100);
+
 
 //Задание 22
 // Запросить у пользователя числа, пока сумма введенных чисел не станет больше 100
+let sumOne = 0;
+while (sumOne <= 100) {
+    let i = +prompt("Введите числа, пока сумма не станет больше 100", 0);
+    if (sumOne > 100) break;
+        sumOne += i;
+}
 
 //Задание 23
 // Напишите функцию, которая изменит фоновый цвет всех элементов <h4> на странице на синий цвет
+const h4FromBody = document.querySelectorAll('h4')
+h4FromBody.forEach(function(elem) {
+    elem.style = "color: blue";
+});
+
 
 //Задание 24
 // Напишите генератор случайных строк до 6 символов
 // Подсказка: используйте методы объекта Math и длину массива alphabet
 let alphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя';
 let randomString = '';
+for (let i = 0; i < 6; i++) {
+    randomString += alphabet[Math.round(Math.random() * (alphabet.length - 1))];
+}
+console.log(randomString);
