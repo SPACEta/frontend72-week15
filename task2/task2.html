@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Анализ оценок студентов</title>
+    <title>Температура в разных городах</title>
     <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;600&family=Roboto+Slab:wght@300;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
-
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/normalize.css" />
 </head>
 
 <body>
-    <main class="main">
-        <h1 class="main__heading">Анализ оценок студентов</h1>
-        <div class="main__form">
-            <p>Дата рождения в текущем году</p>
-            <input id="imputBirthday" type="date"/>
-            <button id="btnBirthday">Посчитать дни до дня рождения</button>
+    <div class="container">
+        <h1>Температура в разных городах</h1>
+        <div id="city">
+            <ul id="list"></ul>
+            <p id="max"></p>
+            <p id="min"></p>
         </div>
-        <div class="task__form">
-			<span id="result"></span>
-			<span id="errorResult"></span>
-        </div>
-    </main>
+    </div>
 
-    <script src="task2.js"></script>
+    <script src="week15.js"></script>
 </body>
 
 </html>
